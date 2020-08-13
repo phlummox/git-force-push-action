@@ -4,7 +4,7 @@ Does force-pushes from the repo where the action is 'installed', to some branch
 in a remote repo - possibly on GitHub, possibly elsewhere, as long as it can be
 written to using an ssh public/private key pair.
 
-The target brannch needn't have the same name as the source (indeed it probably
+The target branch needn't have the same name as the source (indeed it probably
 shouldn't, if both are on GitHub and have actions enabled.)
 
 ## example workflow
@@ -70,7 +70,7 @@ on:
 # or deletion
 
 # and we'll push TO some other-named branch in the
-# remote repo. (Well - it could be the same name, but then if thar is
+# remote repo. (Well - it could be the same name, but then if that is
 # on GitHub and has actions enabled, you'll
 # get peculiar errors as that branch tries to force-push to itself,
 # I imagine.) So the .github/workflows/mypush.yml file will
