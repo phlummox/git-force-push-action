@@ -1,0 +1,30 @@
+
+name: 'force-push git branch to repo'
+author: phlummox@phlummox.dev
+description: 'force-push a git branch to a repo'
+branding:
+  icon: 'arrow-right-circle'
+  color: 'green'
+
+inputs:
+  source_branch:
+    description: "Source branch in the repo where action is performed"
+    required: true
+  target_repo_url:
+    description: "Git URL of target repo"
+    required: true
+  target_branch:
+    description: "Destination branch in target repo"
+    required: true
+  ssh_private_key:
+    description: "SSH private key for target repository"
+    required: true
+  debug:
+    description: "whether to emit debugging output"
+    required: false
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+
