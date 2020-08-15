@@ -7,6 +7,12 @@ written to using an ssh public/private key pair.
 The target branch needn't have the same name as the source (indeed it probably
 shouldn't, if both are on GitHub and have actions enabled.)
 
+## status
+
+Experimental - I was just trying out creating a GitHub action. There are
+probably easier ways to do this (e.g. just use a GitHub SECRET and
+a plain bash script in a workflow step).
+
 ## example workflow
 
 **Step 1**
